@@ -32,6 +32,7 @@
 #pragma mark -
 #pragma mark UIView
 
+/*
 - (void)layoutSubviews {
     [super layoutSubviews];
 
@@ -66,6 +67,7 @@
     _imageView.frame = CGRectIntegral(imageViewFrame);
     _textLabel.frame = CGRectIntegral(textLabelFrame);
 }
+*/
 
 #pragma mark -
 #pragma mark Update
