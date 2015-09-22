@@ -134,6 +134,8 @@ PFUI_ASSUME_NONNULL_BEGIN
  */
 - (void)objectsWillLoad;
 
+- (void)objectsJustLoad;
+
 /*!
  Called when objects have loaded from Parse. If you override this method, you must
  call [super objectsDidLoad:] in your implementation.
