@@ -170,6 +170,10 @@
     [self _refreshLoadingView];
 }
 
+- (void)objectsJustLoad {
+	//before [self.tableView reloadData] and objectsDidLoad
+}
+
 - (void)objectsDidLoad:(NSError *)error {
     if (_firstLoad) {
         _firstLoad = NO;
@@ -245,6 +249,7 @@
             }
 
             [_mutableObjects addObjectsFromArray:foundObjects];
+			[self objectsJustLoad];
             [self.tableView reloadData];
         }
 
