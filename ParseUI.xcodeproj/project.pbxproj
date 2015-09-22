@@ -855,6 +855,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = PF;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Parse Inc.";
 				TargetAttributes = {
@@ -1196,6 +1197,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/ParseUI/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MACH_O_TYPE = staticlib;
+				"OTHER_CFLAGS[sdk=iphoneos9.0]" = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
 				PRODUCT_NAME = ParseUI;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1211,6 +1216,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/ParseUI/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MACH_O_TYPE = staticlib;
+				"OTHER_CFLAGS[sdk=iphoneos9.0]" = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
 				PRODUCT_NAME = ParseUI;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
